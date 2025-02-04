@@ -1,0 +1,10 @@
+# Playwright
+node_modules/
+/playwright/.cache/
+
+# Python
+venv/
+
+# FDD Data
+FDD_Data/
+FDD_Data.zip
