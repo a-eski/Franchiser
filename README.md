@@ -28,6 +28,10 @@ Can easily be ported to support others, feel free to submit a PR.
 
 #### Virtual Environment
 
+If you are not familiar with python, it is recommended to use a python virtual environment.
+
+Here is how to enable/disable the python virtual environment.
+
 ``` sh
 venv\Scripts\activate
 deactivate
