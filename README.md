@@ -8,6 +8,10 @@ The tool downloads FDD's from California Department of Financial Protection and 
 
 ## Sources
 
+Only supported source is [docqnet.dfpi.ca.gov](https://docqnet.dfpi.ca.gov/search/).
+
+Can easily be ported to support others, feel free to submit a PR.
+
 * [docqnet.dfpi.ca.gov](https://docqnet.dfpi.ca.gov/search/)
 * [securities.sos.in.gov](https://securities.sos.in.gov/public-portfolio-search/)
 * [cards.web.commerce.state.mn.us](https://cards.web.commerce.state.mn.us)
@@ -31,6 +35,14 @@ deactivate
 
 ## How Franchiser Works
 
+Franchiser uses Playwright script 'franchiser.js' to download FDD documents from [docqnet.dfpi.ca.gov](https://docqnet.dfpi.ca.gov/search/).
+
+It stores the downloaded FDD's in the RawData folder.
+
+If needed you can prepend the FDD's with the year they are from using the python script 'franchiser.py'.
+
+## How to Use It
+
 ### Step 1
 
 * Create a JavaScript array of franchises you want to search for named franchises.
@@ -49,8 +61,4 @@ Use franchiser.js to download FDD's.
 
 ### Step 3
 
-Use franchiser.py to populate filenames with the Issuance Date.
-
-### Step 4
-
-Grab the revenue numbers and save them to a CSV with company, year, and revenue fields.
+Use franchiser.py to populate filenames with the Issuance Date, if needed.
